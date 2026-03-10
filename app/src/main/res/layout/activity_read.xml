@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/bg_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="हिंदू समय और पंचांग समझें\n\n1) 1 दिन = 60 घटी\n2) 1 घटी = 60 पल\n3) 1 पल = 60 विपल\n4) 1 घटी = 24 मिनट\n5) तिथि सूर्य-चंद्र कोण पर आधारित होती है\n6) नक्षत्र चंद्रमा की स्थिति पर आधारित है\n7) पूर्णिमांत और अमावस्यांत में मास गणना अलग हो सकती है\n\nइस ऐप का यह संस्करण ऑफलाइन बेस है। पूरी exact सटीकता के लिए उच्च-परिशुद्ध खगोलीय ephemeris डेटा जोड़ना आवश्यक है।"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+</ScrollView>
