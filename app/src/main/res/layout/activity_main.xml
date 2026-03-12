@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/bg_main">
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,116 +13,102 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="हिंदू पंचांग (ऑफ़लाइन)"
-            android:textStyle="bold"
+            android:text="Java ↔ Smali Converter"
             android:textSize="22sp"
-            android:textColor="@color/text_primary" />
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:textColor="@color/text_secondary" />
-
-        <TextView
-            android:id="@+id/tvRtc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:textColor="@color/text_secondary" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="12dp">
-
-            <Button
-                android:id="@+id/btnRefreshLocation"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="स्थान रीफ़्रेश" />
-
-            <Space
-                android:layout_width="8dp"
-                android:layout_height="1dp" />
-
-            <Button
-                android:id="@+id/btnReadPage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="पढ़ें" />
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="मास प्रणाली"
-            android:textStyle="bold"
-            android:textColor="@color/text_primary" />
-
-        <RadioGroup
-            android:id="@+id/rgMonthSystem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rbPurnimant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="पूर्णिमांत" />
-
-            <RadioButton
-                android:id="@+id/rbAmavasyant"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="अमावस्यांत" />
-        </RadioGroup>
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="तिथि" android:textStyle="bold" />
-        <TextView android:id="@+id/tvTithi" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="नक्षत्र" android:textStyle="bold" />
-        <TextView android:id="@+id/tvNakshatra" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="मास" android:textStyle="bold" />
-        <TextView android:id="@+id/tvMaas" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="ऋतु" android:textStyle="bold" />
-        <TextView android:id="@+id/tvRitu" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="संवत्सर" android:textStyle="bold" />
-        <TextView android:id="@+id/tvSamvatsar" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="विक्रम संवत" android:textStyle="bold" />
-        <TextView android:id="@+id/tvVikram" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="सूर्योदय" android:textStyle="bold" />
-        <TextView android:id="@+id/tvSunrise" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="सूर्यास्त" android:textStyle="bold" />
-        <TextView android:id="@+id/tvSunset" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="चंद्रोदय" android:textStyle="bold" />
-        <TextView android:id="@+id/tvMoonrise" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="चंद्रास्त" android:textStyle="bold" />
-        <TextView android:id="@+id/tvMoonset" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="हिंदू समय (घटी-पल-विपल)" android:textStyle="bold" />
-        <TextView android:id="@+id/tvHinduTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text_secondary" />
+            android:text="Paste source code and choose conversion direction."
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:text="नोट: यह बेस वर्शन है। Exact गणना के लिए Swiss Ephemeris/JPL ऑफलाइन डेटा जोड़ें।"
-            android:textColor="@color/text_secondary" />
+            android:text="Input"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etInputCode"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top|start"
+            android:hint="Paste Java or Smali code here"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textIsSelectable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnJavaToSmali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Java → Smali" />
+
+            <Button
+                android:id="@+id/btnSmaliToJava"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Smali → Java" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnSwap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Swap" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Clear" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Output"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etOutputCode"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top|start"
+            android:hint="Converted output appears here"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textIsSelectable="true" />
+
     </LinearLayout>
 </ScrollView>
